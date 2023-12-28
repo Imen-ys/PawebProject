@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sing-up.css">
+    <title>Sing in page</title>
+</head>
+<body>
+    <h1 class="title">-----------Sing In-----------</h1>
+
+    <form action="sing-in.php" onsubmit="return isvalid()" method="POST" id="form">
+        <div class="input">
+            <img src="./images/contact_mail_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            <input type="email" placeholder="Votre Email" class="inp" name="email">
+        </div>
+
+        <div class="input">
+            <img src="./images/key_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            <input type="password" placeholder="Votre mot de passe" class="inp" name="motdepasse">
+        </div>
+
+        <button class="btn">Back</button>
+        <button class="btn">Cancel</button>
+        <button type="submit" name="login" id="login" class="btn">Submit</button>
+    </form>
+    
+
+</body>
+</html>
