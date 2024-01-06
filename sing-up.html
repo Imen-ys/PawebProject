@@ -34,11 +34,23 @@
             <input type="password" placeholder="Confirmation" class="inp" name="password_confirmation" id="password_confirmation">
         </div>
 
-        <button class="btn">Back</button>
-        <button class="btn">Cancel</button>
-        <button class="btn" name="submit" type="submit" id="submit">Submit</button>
-        
-         
+        <button class="btn" onclick="back()" type="button">Back</button>
+        <button class="btn" onclick="ClearData()" type="button">Cancel</button>
+        <button class="btn" name="submit" type="submit" id="submit" >Submit</button>
+
     </form>
+    <script>
+        function back(){
+            window.location.href = "index.html";
+        }
+        function ClearData(){
+            nom.value = '';
+            prenom.value = '';
+            email.value = '';
+            motdepasse.value = '';
+            password_confirmation.value = '';
+            matricule.value = '';
+        }
+    </script>
 </body>
 </html>
