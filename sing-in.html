@@ -12,19 +12,27 @@
     <form action="sing-in.php" onsubmit="return isvalid()" method="POST" id="form">
         <div class="input">
             <img src="./images/contact_mail_FILL0_wght400_GRAD0_opsz24.png" alt="">
-            <input type="email" placeholder="Votre Email" class="inp" name="email">
+            <input type="email" placeholder="Votre Email" class="inp" name="email" id="email">
         </div>
 
         <div class="input">
             <img src="./images/key_FILL0_wght400_GRAD0_opsz24.png" alt="">
-            <input type="password" placeholder="Votre mot de passe" class="inp" name="motdepasse">
+            <input type="password" placeholder="Votre mot de passe" class="inp" name="motdepasse" id="motdepasse">
         </div>
 
-        <button class="btn">Back</button>
-        <button class="btn">Cancel</button>
+        <button class="btn" type="button" onclick="back()">Back</button>
+        <button class="btn" type="button" onclick="ClearData()">Cancel</button>
         <button type="submit" name="login" id="login" class="btn">Submit</button>
     </form>
-    
 
+    <script>
+        function back(){
+            window.location.href = "index.html";
+        }
+        function ClearData(){
+            email.value = '';
+            motdepasse.value = '';
+        }
+    </script>
 </body>
 </html>
